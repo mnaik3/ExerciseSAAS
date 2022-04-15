@@ -15,14 +15,14 @@
 
 <html>
 <head>
-<title>Labels</title>
+<title><b>Labels</b></title>
 </head>
-<body>
+<body style="background-color:lightyellow;">
 
 	<table>
 		<tr>
-			<td align="center"><b> Label Detection using Google cloud vision
-					</b></td>
+			<td align="center"><center><h1>Label Detection using Google cloud vision</center>
+					</h1></td>
 		</tr>
 		<tr>
 			<td><br></td>
@@ -46,13 +46,14 @@
 			List<EntityAnnotation> imageLabels = (List<EntityAnnotation>) request.getAttribute("imageLabels");
 		%>
 		<tr>
-			<td>Labels from Google Cloud Vision</td>
-			<td></td>
-			<td>
-				<table border="1">
+			<td> <h3> <center>Labels Generated from Google Cloud Vision :</center></h3></td>
+			<td></td></tr>
+			<tr><td>
+			<center>
+				<table border="2">
 					<tr>
-						<td>Label</td>
-						<td>Score</td>
+						<td><b>Labels</b>></td>
+						<td><b>Score</b>></td>
 
 					</tr>
 
@@ -64,7 +65,7 @@
 					</c:forEach>
 
 				</table>
-
+			</center>
 			</td>
 		</tr>
 		<tr>
