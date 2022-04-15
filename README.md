@@ -68,13 +68,16 @@ Check Create as Maven Project.
 ![image](https://user-images.githubusercontent.com/100692886/163527009-96f839f8-bce9-4232-b03a-42be562f39a4.png)
 
 
-Add neccessary dependencies in pom.xml file. In this google-cloud-vision - artifact is necessary for detecting labels.
+Add the required dependencies in pom.xml file.  
+Here In the google-cloud-vision - artifact is necessary for detecting labels.
 
-After that create application jsp pages and their corresponding servlets. index.jsp: This page allows to upload image to the application. The Upload.java servlet gets the requests.
+Next step is to create application jsp pages and  create their corresponding servlets. 
+index.jsp: Page to upload image to the application. The Upload.java servlet gets the requests.
 
 index.jsp - Allows us to upload an image.
 
-Upload.java - It is a servlet that gets the request. After receiving the request, the image is converted to blobbytes. BLOB allows us to manage the creation and serving of large, immutable blobs to users. After that it is processed in the method getImageLabels() in order to to fetch the image labels by using the Google CV api. The fetched label results are then redirected to the view using labels.jsp
+Upload.java - It is a servlet that gets the request. 
+After receiving the request, the image is converted to blobbytes. BLOB allows us to manage the creation and serving of large, immutable blobs to users. After that it is processed in the method getImageLabels() in order to to fetch the image labels by using the Google CV api. The fetched label results are then redirected to the view using labels.jsp
 
 BlobstoreService -
 
@@ -89,3 +92,6 @@ https://cloud.google.com/vision/docs/reference/rest/v1/AnnotateImageRequest
 After creating the app, now deploy the project to google cloud in the cloud project created.
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/100692886/163527172-e516cf5d-9527-42b3-b314-24b0aa538ac9.png">
+
+## State of system
+The  SAAS application runs properly and able to detect images
