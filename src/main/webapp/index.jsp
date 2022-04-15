@@ -11,11 +11,15 @@
     <head>
         <title>Upload Test</title>
     </head>
-    <body>
-    	<h1>Google SaaS Cloud Vision : Label Detection </h1>
+    <body  style="background-color:lightyellow;" >
+    <center>
+    	<h1>Google SaaS Cloud Vision : Label Detection </h1> </center>
+    	<tb>
         <form action="<%= blobstoreService.createUploadUrl("/upload") %>" method="post" enctype="multipart/form-data">
-            <input type="file" name="myFile">
-            <input type="submit" value="Upload">
+           <tr><td><center> <input type="file" name="myFile"></center></td></tr>
+          <tr><td><center><input type="submit" value="Upload"></center></td></tr>
         </form>
+        </tb>
+       
     </body>
 </html>
